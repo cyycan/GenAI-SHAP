@@ -44,14 +44,14 @@ The framework is delivered as a **Jupyter notebook + presentation deck**, struct
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/shap-agent-governance.git
+git clone https://github.com/cyycan/shap-agent-governance.git
 cd shap-agent-governance
 ```
 
 ### 2. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+not available install one by one please -- pip install -r requirements.txt
 ```
 
 ### 3. Launch the notebook
@@ -119,29 +119,6 @@ AGENT_GOVERNANCE_CONFIG = {
 
 DRIFT_KS_THRESHOLD = 0.10   # KS statistic above which drift is flagged
 BIAS_THRESHOLD     = 0.05   # Flag protected attrs explaining > 5% of SHAP
-```
-
----
-
-## 📦 Output Artefacts
-
-After running the full notebook:
-
-```
-.
-├── AGENT_MODEL_CARD.md                    # Auto-generated explainability model card
-├── agent_feature_correlation.png          # Pre-SHAP feature correlation heatmap
-├── agent_shap_global_importance.png       # Global feature importance per agent type
-├── tool_attribution_{type}.png            # Tool selection attribution charts
-├── trajectory_attribution_{type}.png      # Episode-level attribution heatmaps
-├── hierarchical_shap_system.png           # Multi-agent system attribution
-├── cross_agent_feature_comparison.png     # Cross-agent feature influence comparison
-├── drift_{type}.png                       # SHAP drift visualisation per agent
-└── agent_shap_artefacts/
-    ├── {type}_policy_model.pkl            # Saved policy/surrogate model
-    ├── {type}_explainer.pkl               # Saved SHAP explainer
-    ├── {type}_feature_importance.json     # Feature importance by mean |SHAP|
-    └── {type}_governance.json            # Governance check results + drift summary
 ```
 
 ---
